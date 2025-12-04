@@ -1,0 +1,132 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.status-bar {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  background: #333;
+}
+
+.input-section {
+  margin-bottom: 1.5rem;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.input-section input,
+.input-section textarea,
+.input-section select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-section textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.style-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.style-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #444;
+  border-radius: 20px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.style-btn:hover {
+  border-color: #646cff;
+}
+
+.style-btn.selected {
+  background: #646cff;
+  border-color: #646cff;
+  color: white;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: #535bf2;
+}
+
+.generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ff4444;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #2a2a2a;
+  border-radius: 12px;
+}
+
+.result-section h2 {
+  margin-top: 0;
+}
+
+.result-info pre {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.result-image {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.result-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
